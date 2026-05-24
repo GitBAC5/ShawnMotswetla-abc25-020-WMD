@@ -1,0 +1,581 @@
+/* Fonts for website */
+@import url('httpd://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4{
+    font-size: 46px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0px;
+}
+
+body{
+    width: 100%;
+}
+.FONTS{
+    text-align: center;
+}
+
+/*Header */
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+#header{
+    
+   
+    padding: 20px 80px;
+    background: #cc9da8;
+    
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar { 
+     display: flex;
+    flex-direction: wrap;
+     align-items: right;
+    justify-content: right;
+    
+  }
+
+#navbar li{
+      list-style:none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration:none;
+    font-size: 16px;
+    font: weight 600px;
+    color:rgb(187, 255, 0);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(7, 0, 109)
+    
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background: rgb(7, 0, 109);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Home Page */
+#hero{
+    background-image: url("img/BK2.png");
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 25% right 0;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: blue;
+}
+#hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: blue;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700px;
+    font-size: 15px;
+}
+
+#feature{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /*Feature section */
+    flex-wrap: wrap;
+
+    background-color: #fcf8f8;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(54, 54, 54);
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    margin: 15px;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: aqua;
+    background-color: rgb(250, 177, 222);
+}
+#feature .fe-box:nth-child(2) h6{  /*colors for free shipping*/
+    background-color: rgb(255, 157, 211);
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(255, 151, 238);
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(231, 126, 161);
+}
+/*Head for textbox*/
+#textbox{
+    text-align: center;
+}
+
+/* For Best Seller Products */
+
+#product1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  
+    background-color: #fcf8f8;
+}
+#product1 .pro { 
+     width: 23px;
+     min-width: 250px;
+     padding: 10px 12px;
+    
+     border-radius: 25px;
+     cursor: pointer;
+     background-color: #f9e8e6;
+     margin:15px 0;
+     transition: 0.2s ease;
+     position: relative; 
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgb(156, 156, 156);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color:beige;
+    font-size: 12px;
+
+}
+ #product1 .pro .des h5 {
+    padding-top: 7px;
+    color:black;
+    font-size: 14px;
+ }
+#product1 .pro .des i {
+    font-size: 12px;
+    color: yellow;
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:aquamarine;
+}
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(255, 140, 0);
+    font-weight: 500;
+    color: aquamarine;
+    border:1px solid white;
+    position:absolute;
+    bottom: 20px;
+    right:10px;
+}
+
+
+
+/* Banner Section */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(img/X\ \(3\).jpg);
+    width: 100%;
+    height:4ovh;
+    background-size: cover;
+    background-position: position;
+
+}
+#banner h4{
+   color: white;
+   font-size: 16px;
+
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: rgb(255, 0, 0);
+    
+}
+
+/* Posters*/
+#Posters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#Posters .p1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(img/Poster\ \(7\).jpg);
+    min-width: 50%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+
+}
+#Posters .p2{
+ background-image: url(img/X\ \(1\).jpg);
+min-width: 50%;
+}  /*adjust the posters*/
+
+
+#Posters .p3{
+background-image: url(img/X\ \(2\).jpg);
+min-width: 60%;
+height: 30vh;
+}
+ /*News Letter*/
+#Newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/bloosom.jpg);   
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: rgb(253, 118, 201);
+}
+#Newsletter h4{
+    font-size: 22px;
+    font-weight: 700px;
+    color:beige;
+}
+#Newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: beige;
+}
+#Newsletter p span{
+    color: yellow;
+}
+#Newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#Newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size:14px;
+    width:100%;
+    border:1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#Newsletter button{
+    color: beige;
+    background-color: rgb(23, 49, 49);
+    white-space: nowrap;
+     border: 0;
+    padding: 14px 40px 14px 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700px;
+    font-size: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/*Footer*/
+#footer img{
+    width: 90px;
+    height: auto;
+    align-items: left;
+}
+footer {
+   
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+
+   background-color: #fcf8f8;
+   
+}
+footer .col{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+   
+}
+#Copyright p{
+    align-items: center;
+}
+/*Shop.html styling*/
+#page-header{
+    background-image: url(img/bg\ \(1\).jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+#page-header h2{
+    color: beige;
+}
+/*shop html*/
+#ButtonNum{
+    text-align: center;
+}
+#ButtonNum a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600
+}
+#ButtonNum a i{
+    font-size: 60px;
+    font-weight: 600;
+}
+/*Sproducts page*/
+#ProductDetails{
+    display: flex;
+    margin-top: 20px;
+}
+#ProductDetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+
+/*About Us*/
+#page-header .about-header{
+    background-image: url("img/bloosom.jpg");
+    background-color: rgb(255, 255, 255);
+}
+#about-head{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#about-head img{
+    width: 40%;
+    height:auto;
+}
+
+/*Contact Page*/
+
+#contactdetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactdetails .details{
+    width: 40%;
+}
+
+#contactdetails .details span{
+    font-size: 12px;
+}
+
+/*blog code*/
+
+#blog{
+    padding: 150px 150px 0px 150px;
+    
+}
+#page-header  span{
+    color: rgb(172, 0, 72);
+}
+#blog .blogbox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blogdetails{
+    width: 50%;
+    margin-left: 20px;
+}
+ #blog .blogbox h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 80px;
+    font-weight: 700;
+    color: purple;
+    z-index: -9;
+    
+}
+
+/*Media Queries*/
+@media screen and (max-width:900px) {
+    #hero{
+        font-size: 40%;
+    }
+    #navbar{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       position: fixed;
+      
+        top: 0;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        background-color: #cc9da8;
+        padding: 80px 0 0 10px;   
+        transition: 0.3s;
+    }
+    #navbar li{
+         margin-bottom: 25px;
+         
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+        color: blueviolet;
+        font-size: 24px;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    /*Blog*/
+    #blog{ 
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blogbox{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 90px;
+    }
+
+    /*Product*/
+    #ProductDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #ProductDetails .single-pro-image{
+        width: 100%;
+    }
+
+    /*Contact*/
+    #contactdetails{
+       display: flex;
+        flex-direction: column;  
+    }
+
+    /*About*/
+    #about-head{
+         display: flex;
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+    }
+}
+
+
+/*Navbar for mobile development*/
+
+
